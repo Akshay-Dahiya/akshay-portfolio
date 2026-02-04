@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Akshay Dahiya | AI & ML Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<canvas id="particles"></canvas>
+<div class="cursor"></div>
+
+<nav>
+  <h2 class="logo">Akshay<span>.</span></h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="home" class="hero reveal">
+  <h1>Hi, I'm <span>Akshay Dahiya</span></h1>
+  <h3>AI & Machine Learning Engineer</h3>
+  <p>Building intelligent systems that solve real-world problems.</p>
+
+  <div class="hero-buttons">
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="resume.pdf" download class="btn outline">Download Resume</a>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="tilt">Python</div>
+    <div class="tilt">Machine Learning</div>
+    <div class="tilt">YOLO</div>
+    <div class="tilt">Deep Learning</div>
+    <div class="tilt">Django</div>
+    <div class="tilt">SQL / MySQL</div>
+    <div class="tilt">Power BI</div>
+    <div class="tilt">Data Analysis</div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <h2 class="section-title">Projects</h2>
+  <div class="project-grid">
+
+    <div class="project-card tilt">
+      <h3>🍎 Food Calorie Estimation</h3>
+      <p>YOLO-based real-time calorie estimation for fruits & vegetables.</p>
+      <span>Computer Vision • AI</span>
+    </div>
+
+    <div class="project-card tilt">
+      <h3>🩺 AI Healthcare Chatbot</h3>
+      <p>Deep learning powered chatbot for medical assistance.</p>
+      <span>NLP • Deep Learning</span>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="reveal">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-box">
+    <p>📧 akshaydahiya2004@gmail.com</p>
+    <p>📞 +91 7355874887</p>
+    <p>📍 Gurugram, Haryana</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Akshay Dahiya — Built with 💻 + 🧠
+</footer>
+
+<!-- CHATBOT -->
+<div id="chatbot">
+  <div id="chatbot-header">🤖 Ask Akshay AI</div>
+
+  <div id="api-key-box">
+    <input type="password" id="apiKeyInput" placeholder="Paste OpenAI API Key" />
+    <button onclick="saveApiKey()">Save</button>
+  </div>
+
+  <div id="chatbot-body">
+    <div class="bot-msg">
+      Hi 👋 I’m Akshay’s AI assistant. Ask me about skills, projects, or contact info.
+    </div>
+  </div>
+
+  <div id="chatbot-input">
+    <input type="text" id="userInput" placeholder="Ask something..." />
+    <button onclick="sendMessage()">➤</button>
+  </div>
+</div>
+
+<button id="chatbot-toggle">🤖</button>
+
+<script src="script.js"></script>
+</body>
+</html>
